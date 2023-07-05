@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -m -p -a --group-directories-first -v | printf "%s\n" "$(cat)"
+ls -m -p -a -v | printf "%s\n" "$(cat)"
