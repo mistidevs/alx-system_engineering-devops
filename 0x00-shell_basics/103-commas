@@ -1,2 +1,2 @@
 #!/bin/bash
-LC_ALL=C ls -m -p -a --group-directories-first; echo
+LC_ALL=C ls -m -p -a --group-directories-first | printf "%s\n" "$(cat)"
