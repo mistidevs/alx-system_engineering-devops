@@ -1,2 +1,2 @@
 #!/bin/bash
-find hello -user guillaume | chown betty
+if [[$(stat hello | grep guillaume)]] then chown betty hello
