@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type d \( ! -path . -o -name '.*' \) | grep -c /$
+find . -type d \( ! -path . -name '.*' \) | wc -l
