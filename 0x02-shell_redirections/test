@@ -1,18 +1,26 @@
-total 52
-drwxr-xr-x 2 root root 303 Jul 10 12:04 .
-drwxr-xr-x 6 root root 104 Jul 10 09:50 ..
--rwxr--r-- 1 root root  34 Jul 10 09:59 0-hello_world
--rwxr-xr-x 1 root root  28 Jul 10 10:13 1-confused_smiley
--rwxr-xr-x 1 root root  28 Jul 10 10:16 2-hellofile
--rwxr-xr-x 1 root root  39 Jul 10 10:21 3-twofiles
--rwxr-xr-x 1 root root  33 Jul 10 10:47 4-lastlines
--rwxr-xr-x 1 root root  33 Jul 10 11:12 5-firstlines
--rwxr-xr-x 1 root root  36 Jul 10 11:23 6-third_line
--rwxr-xr-x 1 root root  91 Jul 10 11:55 7-file
--rwxr-xr-x 1 root root  36 Jul 10 12:00 8-cwd_state
--rw-r--r-- 1 root root  37 Jul 10 12:04 9-duplicate_last_line
--rw-r--r-- 1 root root  12 Jul 10 11:47 \*\\'"Best School"'\\*\$\?\*\*\*\*\*:)
--rw-r--r-- 1 root root   2 Jul 10 10:02 .gitignore
--rw-r--r-- 1 root root  52 Jul 10 09:52 README.md
--rw-r--r-- 1 root root   0 Jul 10 12:04 test
--rw-r--r-- 1 root root   0 Jul 10 12:04 test
+C#
+C
+Javascript
+Perl
+PHP
+PHP
+ASP
+R
+Go
+C#
+C++
+R
+Perl
+Javascript
+Javascript
+Python
+Javascript
+Javascript
+Javascript
+Java
+Java
+Python
+Javascript
+Javascript
+Javascript
+ASP
