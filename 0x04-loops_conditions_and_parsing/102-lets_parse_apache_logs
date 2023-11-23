@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Reading and cutting /etc/passwd
+
+awk '{print $1, $9}' apache-access.log
