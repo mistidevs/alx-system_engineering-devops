@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# Reading and cutting /etc/passwd
+# Printing IP and Status Code with awk
 
 awk '{print $1, $9}' apache-access.log
