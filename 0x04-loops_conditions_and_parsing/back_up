@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# AWK for printing occurences in an apache file
+
+awk '{count[$1," ",$9]++} END {for (key in count) print "\t" count[key], key}' apache-access.log | sort -nr
