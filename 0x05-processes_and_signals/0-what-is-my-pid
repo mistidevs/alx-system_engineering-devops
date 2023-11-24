@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Printing the PID of itself
+
+echo $$
