@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# using pgrep to print
+
+bash_pids=$(pgrep -n bash)
+
+for bash_pid in $bash_pids; do
+	process_name=$(cat "/proc/$bash_pid/comm")
+	echo "$bash_pid $process_name"
+done
