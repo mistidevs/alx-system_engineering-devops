@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Printing all processes
+
+ps -ef --forest
