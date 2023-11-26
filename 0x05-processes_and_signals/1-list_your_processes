@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 # Printing all processes
 
-ps aux
+echo "USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND"
+ps aux --forest | awk '{printf "%-10s %5s %4s %4s %6s %6s %-8s %4s %s %s", $1, $2, $3, $4, $5, $6, $7, $9, $10, $11; for (i=12; i<=NF; i++) printf " %s", $i; print ""}'
