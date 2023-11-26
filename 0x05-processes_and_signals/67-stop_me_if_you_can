@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Terminating using pkill and process name
+
+pkill -TERM -f "7-highlander"

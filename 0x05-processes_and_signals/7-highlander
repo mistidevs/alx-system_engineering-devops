@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Printing indefinitely and sleeping
+
+sigterm_handler() {
+	echo "I am invincible!!!"
+}
+
+trap 'sigterm_handler' SIGTERM
+
+i=1
+while ((i == 1)); do
+	echo "To infinity and beyond"
+	sleep 2
+done
