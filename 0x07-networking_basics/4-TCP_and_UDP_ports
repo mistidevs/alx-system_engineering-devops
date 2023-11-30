@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Listing TCP and UDP ports with listening sockets
+
+netstat --listening --program
