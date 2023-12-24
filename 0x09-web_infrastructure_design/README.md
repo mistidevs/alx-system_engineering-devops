@@ -7,4 +7,4 @@
 ## Example
 Here is an example of a three server implementation without any firewalls and SSL-yet.  
 
-![Three Server Implementation](https://imgur.com/a/rBws6oq)
+![Three Server Implementation](https://i.imgur.com/KLsY99u.png)
