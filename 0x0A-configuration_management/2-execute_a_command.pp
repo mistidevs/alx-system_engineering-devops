@@ -1,5 +1,6 @@
-# Killing a process called killmenow
-exec { 'killmenow':
-  command => 'pkill killmenow',
-  onlyif  => 'pgrep killmenow',
+# kill process killmenow
+
+exec { 'pkill':
+  command  => 'pkill killmenow',
+  provider => 'shell',
 }
