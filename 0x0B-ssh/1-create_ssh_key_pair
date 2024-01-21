@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Creating a keygen pair that has the name school with a passphrase of betty in the pwd
+ssh-keygen -f school -N betty -P .
