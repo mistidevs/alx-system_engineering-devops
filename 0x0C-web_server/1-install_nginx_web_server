@@ -23,4 +23,4 @@ echo "Hello World!" >> /var/www/html/index.html
 echo "$SERVER_HTML_CONTENT" > /var/www/html/server.html
 ln -s /etc/nginx/sites-available/web-01 /etc/nginx/sites-enabled/web-01
 nginx -t
-kill -HUP `pgrep nginx`
+service nginx restart
