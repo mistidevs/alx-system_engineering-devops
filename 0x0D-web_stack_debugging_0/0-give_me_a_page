@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
 # Using Apache to return a page
-sudo apt-get -y install update;
-sudo apt-get -y install apache2;
-service apache2 start;
-echo "Hello Holberton" > /var/www/html/index.html
+echo "ServerName localhost" >> /etc/apache2.conf
+service apache2 start
