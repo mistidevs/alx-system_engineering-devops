@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-# Uninstalling NGINX completely
-apt-get -y remove nginx nginx-common;
-apt-get autoremove;
-rm -r /etc/nginx;
-rm -r /var/log/nginx;
-rm -r /var/www/html;
