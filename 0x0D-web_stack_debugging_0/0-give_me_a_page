@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
 # Using Apache to return a page
-echo "ServerName localhost" >> /etc/apache2.conf
 service apache2 start
