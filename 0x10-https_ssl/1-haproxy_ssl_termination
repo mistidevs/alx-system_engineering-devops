@@ -1,0 +1,11 @@
+frontend www_fronted
+    bind *:80
+    bind *:443 ssl crt /etc/ssl/www.demistify.tech/www.demistify.tech.pem
+    redirect scheme https code 301 if !{ ssl_fc }
+    default_backend www_backend
+    option forwardfor
+
+backend www_backend
+    server 478598-web-01 52.91.123.243:80 check
+    server 478598-web-02 34.227.101.27:80 check
+    balance roundrobin
