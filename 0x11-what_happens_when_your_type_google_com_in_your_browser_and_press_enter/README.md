@@ -15,7 +15,7 @@ For this article the focus will be on the in depth workings of typing google.com
 - Database
 
 The diagrammatic representation right below shows a snapshot of the exhilarating journey we will dive into.
-![Typing google.com and hitting enter](https://imgur.com/a/XEakGGu)
+![Typing google.com and hitting enter](https://i.imgur.com/MOneaPR.png)
 
 ## DNS Request
 It all begins by opening a web browser of your choice and typing google.com and hitting enter. The web browser behind the scenes checks itself to see if it has a DNS (Domain Name Service) record that matches exactly the web page being requested. If it does, then the IP address is resolved and the DNS request is complete. However, this is an ideal case. In a slightly less ideal and more realistic case, the web browser does not have the DNS record hence it asks the operating system. At times the operating system has a cached DNS record of the site. However, this is often unlikely since operating systems as we entered the 21st Century ceased to store a DNS record of every website in local storage. This was due to the rapid growth in the number of websites that were populating the website.
