@@ -2,6 +2,7 @@
 """
 Using an API to obtain data
 """
+import csv
 import json
 import requests
 from sys import argv
@@ -19,10 +20,9 @@ if __name__ == '__main__':
     response_name = requests.get(url_name)
     todos = response_todos.json()
     name = (name := response_name.json()).get('name')
-    tasks_num = len(todos)
 
-    with open(f"{user_id}.csv", mode="w", encoding="utf-8") as f:
-        for i in range(tasks_num):
-            status = todos[i]['completed']
-            task = todos[i]['title']
-            f.write(f'"{user_id}","{name}","{status}","{task}"\n')
+    with open(f"{user_id}.csv", mode="w", newline="") as f:
+        writer = csv.writer(f, quoting=csv.QUOTE_ALL)
+        [writer.writerow(
+            [user_id, name, t.get("completed"), t.get("title")]
+        ) for t in todos]
