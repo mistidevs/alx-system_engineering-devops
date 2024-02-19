@@ -1,28 +1,18 @@
 #!/usr/bin/python3
-"""
-Using an API to obtain data
-"""
+"""Exports to-do list information for a given employee ID to CSV format."""
 import csv
-import json
 import requests
-from sys import argv
+import sys
 
+if __name__ == "__main__":
+    user_id = sys.argv[1]
+    url = "https://jsonplaceholder.typicode.com/"
+    user = requests.get(url + "users/{}".format(user_id)).json()
+    username = user.get("username")
+    todos = requests.get(url + "todos", params={"userId": user_id}).json()
 
-if __name__ == '__main__':
-    """
-    Returns information about his/her TODO list progress.
-    Exports in CSV format.
-    """
-    user_id = argv[1]
-    url_todos = f"https://jsonplaceholder.typicode.com/users/{argv[1]}/todos"
-    url_name = f"https://jsonplaceholder.typicode.com/users/{argv[1]}"
-    response_todos = requests.get(url_todos)
-    response_name = requests.get(url_name)
-    todos = response_todos.json()
-    name = (name := response_name.json()).get('name')
-
-    with open(f"{user_id}.csv", mode="w", newline="") as f:
-        writer = csv.writer(f, quoting=csv.QUOTE_ALL)
+    with open("{}.csv".format(user_id), "w", newline="") as csvfile:
+        writer = csv.writer(csvfile, quoting=csv.QUOTE_ALL)
         [writer.writerow(
-            [user_id, name, t.get("completed"), t.get("title")]
-        ) for t in todos]
+            [user_id, username, t.get("completed"), t.get("title")]
+         ) for t in todos]
