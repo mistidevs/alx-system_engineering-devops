@@ -27,9 +27,5 @@ Hence, a the solution was entering the file and removing the extra p's present. 
 
 `sudo sed -i "s/.phpp/.php/" /var/www/html/wp-settings.php`
 
-The sed command does in-place editing of every occurence of .phpp to .php. The command is:
-
-`sudo sed -i "s/.phpp/.php/" /var/www/html/wp-settings.php`
-
 ## Corrective and Preventive Measures
 To ensure that this error does not happen in the future- or that it will happen with less frequency- the developer team will ensure they are well rested and always proofread each other's work. Moreover, after deploying to production automated tests will be deployed for a period of 15 minutes to ensure the deployment is stable and error free. Nonetheless, to err is human. Notwithstanding, the team will perfect the art of seldom erring.
