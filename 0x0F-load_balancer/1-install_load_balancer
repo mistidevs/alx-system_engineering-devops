@@ -11,8 +11,8 @@ frontend http-in
     mode http
     balance roundrobin
     option forwardfor
-    server 478598-web-01 52.91.123.243:80 check
-    server 478598-web-02 34.227.101.27:80 check
+    server 478598-web-01 100.26.169.19:80 check
+    server 478598-web-02 34.237.91.151:80 check
 EOF
 
 service haproxy start
